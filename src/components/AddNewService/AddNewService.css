@@ -1,0 +1,18 @@
+.add-btn{
+  background: linear-gradient(120deg, #47bcc6 0%, #47bcc6 100%);
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  font-weight: 500;
+  padding: 10px 30px;
+}
+.add-btn:hover{
+  background: linear-gradient(120deg, #47bcc6 0%, #47bcc6 100%);
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  font-weight: 500;
+  padding: 10px 30px;
+}

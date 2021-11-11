@@ -1,0 +1,39 @@
+.bg-color{
+  background-image: url("../../images/slides/slider.jpg"); 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover;
+  width: 100%;
+  height: auto;
+}
+.tourone{
+  text-align: left;
+}
+.tourtwo{
+  text-align: right;
+}
+.tourthree{
+  text-align: left;
+}
+.bannerbtn{
+  color: #fff;
+  border: 2px solid #fff;
+  outline: none;
+  border-radius: 50px;
+  font-weight: 500;
+  padding: 10px 30px;
+  margin: 10px;
+}
+.bannerbtn:hover{
+  background-color: #865932;
+  color: #fff;
+  border: 2px solid #fff;
+  outline: none;
+  border-radius: 50px;
+  font-weight: 500;
+  padding: 10px 30px;
+  margin: 10px;
+}
+.banner-para{
+  line-height: 30px;
+}

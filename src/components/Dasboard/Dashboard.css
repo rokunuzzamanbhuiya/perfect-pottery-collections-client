@@ -1,0 +1,12 @@
+.dashboard {
+  color: rgb(0, 0, 0);
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.dashboard-menu {
+  list-style: none;
+  margin-top: 10px;
+}
+.dashboard-menu:hover {
+  color: cyan;
+}

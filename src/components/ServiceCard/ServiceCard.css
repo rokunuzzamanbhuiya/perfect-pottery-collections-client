@@ -1,0 +1,21 @@
+.btnservice{
+  border: 2px solid #865932;
+  outline: none;
+  border-radius: 50px;
+  font-weight: 500;
+  padding: 10px 30px;
+  margin: 10px;
+}
+.btnservice:hover{
+  background-color: #865932;
+  color: #fff;
+  border: 2px solid #fff;
+  outline: none;
+  border-radius: 50px;
+  font-weight: 500;
+  padding: 10px 30px;
+  margin: 10px;
+}
+.serviceCard:hover{
+  border: 1px solid #865932;
+}

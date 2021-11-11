@@ -1,0 +1,17 @@
+.event{
+    padding-top: 40px;
+    padding-bottom: 20px;
+    background-color: #895c34;
+}
+.user-image img {
+    width: 180px;
+    height: 180px;
+    border-radius: 5px;
+    margin-top: -8px;
+    margin-bottom: 10px;
+}
+.review{
+    font-size: 20px !important;
+    color: #ffd904 !important;
+    cursor: pointer;
+}

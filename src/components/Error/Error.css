@@ -1,0 +1,42 @@
+.error{
+  text-align: center;
+  margin: 220px auto;
+  overflow: hidden;
+}
+.notfoundh1{
+  color: rgb(0, 0, 0);
+  font-size: 44px;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-top: 0;
+}
+.notfoundh2{
+  color: rgb(0, 0, 0);
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 0;
+}
+.notfoundp{
+  color: rgb(0, 0, 0);
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  margin-top: 0px;
+}
+.notfound{
+  font-size: 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+  background: linear-gradient(120deg, #47bcc6 0%, #41aee6 100%);
+  display: inline-block;
+  padding: 15px 30px;
+  border-radius: 40px;
+  color: #fff;
+  font-weight: 700;
+}
+.notfound:hover{
+  color: #fff;
+  text-decoration: none;
+}
+
