@@ -19,6 +19,7 @@ import AddNewService from "./components/AddNewService/AddNewService";
 import Confirm from "./components/Confirm/Confirm";
 import Offer from './components/Offer/Offer';
 import Dashboard from './components/Dasboard/Dashbaord';
+import DashboardTwo from './components/DasboardTwo/DashbaordTwo';
 import Pay from './components/Pay/Pay';
 import Review from './components/Review/Review';
 import MakeAdmin from './components/MakeAdmin/MakeAdmin';
@@ -51,6 +52,9 @@ function App() {
           <Route exact path="/contact">
             <Contact></Contact>
           </Route>
+          <PrivateRoute exact path="/dashboardtwo">
+            <DashboardTwo></DashboardTwo>
+          </PrivateRoute>
           <PrivateRoute exact path="/dashboard">
             <Dashboard></Dashboard>
           </PrivateRoute>

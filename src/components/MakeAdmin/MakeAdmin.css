@@ -1,0 +1,25 @@
+.form-admim{
+  border: 1px solid #865932;;
+  box-shadow: none;
+  height: 45px;
+  border-radius: 50px;
+  box-shadow: 0 7px 13px 0 rgba(72, 194, 78, 0.02), 0 0px 15px 0 rgba(72, 194, 78, 0.09);
+}
+.make-btn{
+  background: linear-gradient(120deg, #865932 0%, #865932 100%);
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  font-weight: 500;
+  padding: 10px 30px;
+}
+.make-btn:hover{
+  background: linear-gradient(120deg, #865932 0%, #865932 100%);
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  font-weight: 500;
+  padding: 10px 30px;
+}

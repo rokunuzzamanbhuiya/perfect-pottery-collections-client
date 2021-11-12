@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import "./AddNewService.css";
 
 const AddNewService = () => {
@@ -14,9 +15,14 @@ const AddNewService = () => {
                             <input type="text" id="serviceDesAddId" className="form-control mb-4" placeholder="Price"/>
                             <input type="text" id="serviceImgAddId" className="form-control mb-4" placeholder="Image url link"/>
                         </div>
-                        <div className="text-end pt-2 pb-5">
+                        <div className="text-center pt-2 pb-5">
                             <button id="serviceAddConfirmBtn" type="button" className="btn add-btn">Add New Service</button>
                         </div>
+                        <div className="text-center">
+                          <Link className="text-center notfound shadow mb-5" to="/dashboard">
+                            Go To Dashboard
+                        </Link>
+                         </div>
                 </div>
             </div>
         </div>
