@@ -46,6 +46,9 @@ const Header = () => {
                 <>
                   <Nav.Link as={Link} to="/dashboard" style={{ fontWeight: "500", color: "#865932" }}>
                   Dashboard
+                  </Nav.Link>
+                  <Nav.Link as={Link} to="/dashboardTwo" style={{ fontWeight: "500", color: "#865932" }}>
+                  DashboardTwo
                 </Nav.Link>
                 {/* <Nav.Link as={Link} to="/myorders" style={{ fontWeight: "500", color: "#865932" }}>
                   My Orders

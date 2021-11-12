@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Event from "././components/Event/Event";
+import ReviewGet from "././components/ReviewGet/ReviewGet";
 import './App.css';
 import AuthProvider from "./components/Context/AuthProvider";
 import ServiceDetail from "./components/ServiceDetail/ServiceDetail";
@@ -19,6 +19,10 @@ import AddNewService from "./components/AddNewService/AddNewService";
 import Confirm from "./components/Confirm/Confirm";
 import Offer from './components/Offer/Offer';
 import Dashboard from './components/Dasboard/Dashbaord';
+import Pay from './components/Pay/Pay';
+import Review from './components/Review/Review';
+import MakeAdmin from './components/MakeAdmin/MakeAdmin';
+import ManageServices from './components/ManageServices/ManageServices';
 
 function App() {
   return (
@@ -38,8 +42,8 @@ function App() {
           <PrivateRoute exact path="/servicedetail/:detailId">
             <ServiceDetail></ServiceDetail>
           </PrivateRoute>
-          <Route exact path="/event">
-            <Event></Event>
+          <Route exact path="/review">
+            <ReviewGet></ReviewGet>
           </Route>
           <Route exact path="/offer">
             <Offer></Offer>
@@ -50,14 +54,26 @@ function App() {
           <PrivateRoute exact path="/dashboard">
             <Dashboard></Dashboard>
           </PrivateRoute>
-          <PrivateRoute exact path="/myorders">
+          <PrivateRoute exact path="/dashboard/pay">
+            <Pay></Pay>
+          </PrivateRoute>
+          <PrivateRoute exact path="/dashboard/myorders">
             <MyOrders></MyOrders>
           </PrivateRoute>
-          <PrivateRoute exact path="/manageallorders">
+          <PrivateRoute exact path="/dashboard/review">
+            <Review></Review>
+          </PrivateRoute>
+          <PrivateRoute exact path="/dashboard/manageallorders">
             <ManageAllOrders></ManageAllOrders>
           </PrivateRoute>
-          <PrivateRoute exact path="/addnewservice">
+          <PrivateRoute exact path="/dashboard/addnewservice">
             <AddNewService></AddNewService>
+          </PrivateRoute>
+          <PrivateRoute exact path="/dashboard/makeadmin">
+            <MakeAdmin></MakeAdmin>
+          </PrivateRoute>
+          <PrivateRoute exact path="/dashboard/manageservices">
+            <ManageServices></ManageServices>
           </PrivateRoute>
           <PrivateRoute exact path="/confirm">
             <Confirm></Confirm>

@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Banner from "../Banner/Banner";
-//import Services from "../Services/Services";
 import ServiceCard from "../ServiceCard/ServiceCard";
-import Event from "../Event/Event";
+import ReviewShow from "../ReviewShow/ReviewShow";
 import Contact from "../Contact/Contact";
 import Offer from "../Offer/Offer";
 
@@ -37,7 +36,7 @@ const Home = () => {
           ))}
         </div>
       </section>
-      <Event></Event>
+      <ReviewShow></ReviewShow>
       <Offer></Offer>
       <Contact></Contact>
     </div>

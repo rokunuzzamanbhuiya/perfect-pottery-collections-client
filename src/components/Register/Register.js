@@ -2,11 +2,13 @@ import React, { useState } from "react";
 import { Link, useHistory, useLocation } from 'react-router-dom';
 import useAuth from "../Hooks/useAuth";
 import "./Register.css";
+import useFirebase from "../Hooks/useFirebase";
+//import { useForm } from "react-hook-form";
 
 const Register = () => {
    
      
-const { signInWithGoogle, createAccountWithGoogle,setUser , setIsLoading , updateName } = useAuth();
+const { signInWithGoogle, createAccountWithGoogle, setUser , setIsLoading , updateName } = useAuth();
 
 const history= useHistory()
 const location = useLocation()
@@ -33,7 +35,6 @@ const handleGetPassword=(e)=> {
 }
 
 
-
 const handleRegistration=(e)=> {
     e.preventDefault();
     createAccountWithGoogle(email,password)
@@ -53,7 +54,6 @@ const handleRegistration=(e)=> {
       })
 }
 
-
     
 const handleGoogleLogin = () => {
         signInWithGoogle()
@@ -70,30 +70,43 @@ const handleGoogleLogin = () => {
           })
       };
     
+      
+  
+  
+   const { googleSignIn, handleUserRegister } = useFirebase();
+   //const { register, handleSubmit, watch, errors } = useForm();
+
+   const onSubmit = (data) => {
+     handleUserRegister(data.email, data.password);
+     console.log(data);
+   };
+  
+  
+  
 
     return (
       <div class="signup">
         <div className="container my-5 shadow py-5">
-          <h2 className="mb-4 text-center rg-bolder">Sign Up</h2>
+          <h2 className="mb-4 text-center rg-bolder w-50">Sign Up</h2>
           <div className="row text-center">
             <div className="col-md-12">
-              <form onSubmit={handleRegistration}>
+              <form onSubmit={handleRegistration(onSubmit)}>
                 <input
-                  className="mb-3"
+                  className="mb-3 w-50 form-reg"
                   type="text"
                   onBlur={handleGetName}
                   placeholder="Name"
                 />
                 <br />
                 <input
-                  className="mb-3"
+                  className="mb-3 w-50 form-reg"
                   type="email"
                   onBlur={handleGetEmail}
                   placeholder="Email"
                 />
                 <br />
                 <input
-                  className="mb-3"
+                  className="mb-3 w-50 form-reg"
                   type="password"
                   onBlur={handleGetPassword}
                   placeholder="Password"

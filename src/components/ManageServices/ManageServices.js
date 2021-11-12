@@ -1,17 +1,16 @@
 import React from 'react';
-import { Link, NavLink } from 'react-router-dom';
-import "./MyOrders.css";
+import './ManageServices.css'
+import { Link } from "react-router-dom";
 
-
-const MyOrders = () => {
+const ManageServices = () => {
     return (
       <div>
         <div className="container">
-          <h2 className="text-center pt-5">My Orders</h2>
+          <h2 className="text-center pt-5">Manage Services</h2>
           <div className="row">
-            <div className=" text-center col-md-12 col-sm-12 p-5">
+            <div className="col-md-12 p-5">
               <table
-                id=""
+                id="mao"
                 className="table table-striped table-bordered"
                 cellspacing="0"
                 width="100%"
@@ -21,7 +20,7 @@ const MyOrders = () => {
                     <th className="th-sm">SL NO</th>
                     <th className="th-sm">ID</th>
                     <th className="th-sm">NAME</th>
-                    <th className="th-sm">STATUS</th>
+                    <th className="th-sm">USER</th>
                     <th className="th-sm">DELETE</th>
                   </tr>
                 </thead>
@@ -30,9 +29,15 @@ const MyOrders = () => {
                     <td className="th-sm">01</td>
                     <td className="th-sm">101</td>
                     <td className="th-sm">Discover Depth of Beach</td>
-                    <td className="th-sm pd-btn">Pending</td>
+                    <td className="th-sm">Rokunuzzaman Bhuiya</td>
                     <td className="th-sm">
-                      <Link to="/myorders" type="button" className="" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                      <Link
+                        to="/myorders"
+                        type="button"
+                        className=""
+                        data-bs-toggle="modal"
+                        data-bs-target="#exampleModal"
+                      >
                         <i className="fas fa-trash-alt d-btn"></i>
                       </Link>
                     </td>
@@ -42,9 +47,15 @@ const MyOrders = () => {
                     <td className="th-sm">02</td>
                     <td className="th-sm">102</td>
                     <td className="th-sm">The Dark Forest Adventure</td>
-                    <td className="th-sm pd-btn">Pending</td>
+                    <td className="th-sm">Rokunuzzaman Bhuiya</td>
                     <td className="th-sm">
-                      <Link to="/myorders" type="button" className="" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                      <Link
+                        to="/myorders"
+                        type="button"
+                        className=""
+                        data-bs-toggle="modal"
+                        data-bs-target="#exampleModal"
+                      >
                         <i className="fas fa-trash-alt d-btn"></i>
                       </Link>
                     </td>
@@ -53,9 +64,15 @@ const MyOrders = () => {
                     <td className="th-sm">03</td>
                     <td className="th-sm">103</td>
                     <td className="th-sm">Discover Depth of Beach</td>
-                    <td className="th-sm pd-btn">Pending</td>
+                    <td className="th-sm">Rokunuzzaman Bhuiya</td>
                     <td className="th-sm">
-                      <Link to="/myorders" type="button" className="" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                      <Link
+                        to="/myorders"
+                        type="button"
+                        className=""
+                        data-bs-toggle="modal"
+                        data-bs-target="#exampleModal"
+                      >
                         <i className="fas fa-trash-alt d-btn"></i>
                       </Link>
                     </td>
@@ -64,39 +81,62 @@ const MyOrders = () => {
                     <td className="th-sm">04</td>
                     <td className="th-sm">104</td>
                     <td className="th-sm">Moscow Red City Land</td>
-                    <td className="th-sm text-info">Approved</td>
+                    <td className="th-sm">Rokunuzzaman Bhuiya</td>
                     <td className="th-sm">
-                      <Link to="/myorders" type="button" className="" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                      <Link
+                        to="/myorders"
+                        type="button"
+                        className=""
+                        data-bs-toggle="modal"
+                        data-bs-target="#exampleModal"
+                      >
                         <i className="fas fa-trash-alt d-btn"></i>
                       </Link>
                     </td>
                   </tr>
                 </tbody>
               </table>
-              <NavLink className="text-center notfound shadow mt-5" to="/dashboard">
-                Go To Dashboard
-              </NavLink>
-
 
               {/* <!-- Modal --> */}
-              <div className="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div
+                className="modal fade"
+                id="exampleModal"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
                 <div className="modal-dialog">
                   <div className="modal-content">
                     <div className="modal-header">
-                      
-                      <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      <button
+                        type="button"
+                        className="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
                     </div>
                     <div className="modal-body text-center">
                       Are You Want To Delete?
                     </div>
                     <div className="modal-footer">
-                      <button type="button" className="btn btn-info" data-bs-dismiss="modal">Cancel</button>
-                      <button type="button" className="btn btn-danger" data-bs-dismiss="modal">Delete</button>
+                      <button
+                        type="button"
+                        className="btn btn-info"
+                        data-bs-dismiss="modal"
+                      >
+                        Cancel
+                      </button>
+                      <button
+                        type="button"
+                        className="btn btn-danger"
+                        data-bs-dismiss="modal"
+                      >
+                        Delete
+                      </button>
                     </div>
                   </div>
                 </div>
               </div>
-
             </div>
           </div>
         </div>
@@ -104,4 +144,4 @@ const MyOrders = () => {
     );
 };
 
-export default MyOrders;
+export default ManageServices;

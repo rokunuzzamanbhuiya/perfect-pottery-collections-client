@@ -1,0 +1,18 @@
+.pay{
+    color: #865932;
+}
+.notfound{
+  font-size: 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+  background: linear-gradient(120deg, #865932 0%, #865932 100%);
+  display: inline-block;
+  padding: 15px 30px;
+  border-radius: 40px;
+  color: #fff;
+  font-weight: 700;
+}
+.notfound:hover{
+  color: #fff;
+  text-decoration: none;
+}

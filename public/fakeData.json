@@ -142,5 +142,65 @@
     "role": "Developer",
     "price": "40",
     "picture": "https://raw.githubusercontent.com/rokunuzzamanbhuiya/fake-data-json/main/images/pottery/intro12.png"
-    }      
+    },
+
+
+
+    
+    {
+    "id":"1",
+    "name":"Rokunuzzaman Bhuiya",
+    "comments":"Our program is make you enjoy and explore the life. we ‘ll be happy when see you and your family happy.",
+    "rating":"5"
+    },
+    {
+    "id":"2",
+    "name":"Masud Rana",
+    "comments":"Our program is make you enjoy and explore the life. we ‘ll be happy when see you and your family happy.",
+    "rating":"5"
+    },     
+    {
+    "id":"3",
+    "name":"Sumon Mulla",
+    "comments":"Our program is make you enjoy and explore the life. we ‘ll be happy when see you and your family happy.",
+    "rating":"5"
+    },     
+    {
+    "id":"4",
+    "name":"Selim Rana",
+    "comments":"Our program is make you enjoy and explore the life. we ‘ll be happy when see you and your family happy.",
+    "rating":"5"
+    },     
+    {
+    "id":"5",
+    "name":"Amena Aktar",
+    "comments":"Our program is make you enjoy and explore the life. we ‘ll be happy when see you and your family happy.",
+    "rating":"5"
+    },     
+    {
+    "id":"6",
+    "name":"Momena Khatun",
+    "comments":"Our program is make you enjoy and explore the life. we ‘ll be happy when see you and your family happy.",
+    "rating":"5"
+    },
+    
+[
+    {
+    "id":"1",
+    "email":"rokunuzzamanbhuiya@gamil.com",
+    "role":"admin"
+    },
+    {
+    "id":"2",
+    "email":"rokunuzzamanbhuiya@outlook.com"
+    },
+    {
+    "id":"3",
+    "email":"admin@admin.com",
+    "role":"admin"
+    },
+    {
+    "id":"4",
+    "email":"mushfiratnasrin.edu@gmail.com"
+    }   
 ]

@@ -1,10 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { useParams } from 'react-router';
+import useAuth from "../Hooks/useAuth";
 import './ServiceDetail.css';
 
 
 const ServiceDetail = () => {
+
+  const { user } = useAuth();
 
   const { detailId } = useParams();
 
@@ -39,7 +42,9 @@ const ServiceDetail = () => {
               ${singleData.price}
             </h3>
             <hr />
-            <h3 className="p-4 text-center">Please Fillup The Form For Confirm Your Order:</h3>
+            <h3 className="p-4 text-center">
+              Please Fillup The Form For Confirm Your Order:
+            </h3>
             <div>
               <div className="col-md-12 cnfm-form">
                 <form action="" method="">
@@ -50,6 +55,7 @@ const ServiceDetail = () => {
                         type="text"
                         className="form-control"
                         id="name"
+                        defaultValue={user?.displayName}
                         placeholder="Name"
                       />
                     </div>
@@ -61,43 +67,44 @@ const ServiceDetail = () => {
                         type="email"
                         className="form-control"
                         id="email"
+                        defaultValue={user?.email}
                         placeholder="Email"
                       />
                     </div>
                   </div>
                   <div className="form-group">
                     <input
-                      name="sub"
+                      name="address"
                       type="text"
                       className="form-control"
-                      id="sub"
+                      id="address"
                       placeholder="Adress"
                     />
                   </div>
                   <div className="form-group">
                     <input
-                      name="sub"
+                      name="city"
                       type="text"
                       className="form-control"
-                      id="sub"
+                      id="city"
                       placeholder="City"
                     />
                   </div>
                   <div className="form-group">
                     <input
-                      name="sub"
+                      name="phone"
                       type="text"
                       className="form-control"
-                      id="sub"
+                      id="phone"
                       placeholder="Phone"
                     />
                   </div>
                   <div className="form-group">
                     <input
-                      name="sub"
+                      name="date"
                       type="date"
                       className="form-control"
-                      id="sub"
+                      id="date"
                       placeholder="Date"
                     />
                   </div>

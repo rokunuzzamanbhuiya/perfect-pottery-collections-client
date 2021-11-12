@@ -22,16 +22,20 @@
     padding: 0 100px;
 }
 .sdetail-btn{
-  font-size: 16px;
-  text-decoration: none;
-  background: linear-gradient(120deg, #47bcc6 0%, #41aee6 100%);
-  display: inline-block;
-  padding: 12px 30px;
-  border: none;
-  border-radius: 40px;
-  color: #fff; 
+  border: 2px solid #865932;
+  outline: none;
+  border-radius: 50px;
+  font-weight: 500;
+  padding: 10px 30px;
+  margin: 10px;
 }
 .sdetail-btn:hover{
+  background-color: #865932;
   color: #fff;
-  text-decoration: none;
+  border: 2px solid #fff;
+  outline: none;
+  border-radius: 50px;
+  font-weight: 500;
+  padding: 10px 30px;
+  margin: 10px;
 }

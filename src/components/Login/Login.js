@@ -60,19 +60,19 @@ const handleLoginWithEmailAndPassword=(e)=>{
   return (
     <div class="login">
       <div className="container my-5 shadow py-5">
-        <h2 className="mb-4 text-center log-bolder">Log In</h2>
+        <h2 className="mb-4 text-center log-bolder w-50">Log In</h2>
         <div className="row text-center">
           <div className="col-md-12">
             <form onSubmit={handleLoginWithEmailAndPassword}>
               <input
-                className="mb-3"
+                className="mb-3 w-50 form-log"
                 type="email"
                 onBlur={handleGetEmail}
                 placeholder="Email"
               />
               <br />
               <input
-                className="mb-3"
+                className="mb-3 w-50 form-log"
                 type="password"
                 onBlur={handleGetPassword}
                 placeholder="Password"

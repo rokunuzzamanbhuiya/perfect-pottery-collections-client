@@ -73,8 +73,8 @@ const Contact = () => {
                     placeholder="Message"
                   ></textarea>
                 </div>
-                <div className="text-right">
-                  <Link className="btn btn-danger contact-btn" to="/">
+                <div className="contact-div">
+                  <Link className="btn btn-danger text-center contact-btn" to="/">
                     Send
                   </Link>
                 </div>

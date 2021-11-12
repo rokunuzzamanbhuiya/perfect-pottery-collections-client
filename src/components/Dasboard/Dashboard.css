@@ -1,12 +1,22 @@
-.dashboard {
-  color: rgb(0, 0, 0);
+.dashboard-left{
   padding-top: 50px;
   padding-bottom: 50px;
 }
+.dashboard-right{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+li{
+   text-decoration: none;
+}
 .dashboard-menu {
+  text-decoration: none;
   list-style: none;
+  color: #865932;
   margin-top: 10px;
 }
 .dashboard-menu:hover {
-  color: cyan;
+  text-decoration: none;
+  list-style: none;
+  color: #865932;
 }

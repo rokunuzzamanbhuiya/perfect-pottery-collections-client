@@ -1,35 +1,21 @@
-.log-bolder{
-  background-color: #865932;
-  color: rgb(255, 255, 255);
-  border: none;
-  outline: none;
-  border-radius: 20px;
-  font-weight: 500;
-  padding: 14px 30px;
-  width: 400px;
-  margin: 0 auto;
-  border: 2px solid #865932 ;
-}
-.form-log{
+.form-rev{
   border: 1px solid #865932;;
   box-shadow: none;
   height: 45px;
   border-radius: 50px;
   box-shadow: 0 7px 13px 0 rgba(72, 194, 78, 0.02), 0 0px 15px 0 rgba(72, 194, 78, 0.09);
 }
-.login-btn{
-  background: linear-gradient(120deg, #865932 0%, #865932 100%);
-  color: #fff;
-  border: none;
+.submit-btn{
+  border: 2px solid #865932;
+  color: rgb(0, 0, 0);
   outline: none;
   border-radius: 50px;
   font-weight: 500;
   padding: 10px 30px;
 }
-.login-btn:hover{
+.submit-btn:hover{
   background: linear-gradient(120deg, #865932 0%, #865932 100%);
   color: #fff;
-  border: none;
   outline: none;
   border-radius: 50px;
   font-weight: 500;

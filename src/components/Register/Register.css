@@ -1,5 +1,6 @@
 .rg-bolder{
-  color: rgb(0, 0, 0);
+  background-color: #865932;
+  color: rgb(255, 255, 255);
   border: none;
   outline: none;
   border-radius: 20px;
@@ -7,10 +8,21 @@
   padding: 14px 30px;
   width: 400px;
   margin: 0 auto;
-  border: 2px solid #47bcc6 ;
+  border: 1px solid #865932 ;
+}
+.form-area{
+  width: 800px;
+  margin: 0 auto;
+}
+.form-reg{
+  border: 1px solid #865932;;
+  box-shadow: none;
+  height: 45px;
+  border-radius: 50px;
+  box-shadow: 0 7px 13px 0 rgba(72, 194, 78, 0.02), 0 0px 15px 0 rgba(72, 194, 78, 0.09);
 }
 .reg-btn{
-  background: linear-gradient(120deg, #47bcc6 0%, #47bcc6 100%);
+  background: linear-gradient(120deg, #865932 0%, #865932 100%);
   color: #fff;
   border: none;
   outline: none;
@@ -19,7 +31,7 @@
   padding: 10px 30px;
 }
 .reg-btn:hover{
-  background: linear-gradient(120deg, #47bcc6 0%, #47bcc6 100%);
+  background: linear-gradient(120deg, #865932 0%, #865932 100%);
   color: #fff;
   border: none;
   outline: none;
