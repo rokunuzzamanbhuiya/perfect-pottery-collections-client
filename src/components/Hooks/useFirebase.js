@@ -6,9 +6,9 @@ initializeAuthentication();
 const useFirebase = () => {
   
  const [user , setUser]=useState({})
-const [isLoading , setIsLoading] =useState(true)
+ const [isLoading , setIsLoading] =useState(true)
  const auth = getAuth()
-  const googleProvider= new GoogleAuthProvider()
+ const googleProvider= new GoogleAuthProvider()
 
 
 useEffect(() =>{
@@ -25,15 +25,12 @@ useEffect(() =>{
       return ()=> unsubscribe()
 },[])
  
-
   const signInWithGoogle=()=> {
    return  signInWithPopup(auth, googleProvider)
- 
   }
 
 
 const  createAccountWithGoogle =(email , password)=> {
-
     return createUserWithEmailAndPassword(auth, email, password)
 }
 
@@ -64,8 +61,6 @@ const updateName= (name)=> {
  }
 
   
-  
-  
   const handleUserRegister = (email, password) => {
     createUserWithEmailAndPassword(auth, email, password)
       .then((result) => {
@@ -78,7 +73,7 @@ const updateName= (name)=> {
   };
 
   const hanldeUserInfoRegister = (email) => {
-    fetch("http://localhost:5000/addUserInfo", {
+    fetch("https://dry-ravine-95776.herokuapp.com/addUserInfo", {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify({ email }),
@@ -87,8 +82,6 @@ const updateName= (name)=> {
       .then((result) => console.log(result));
   };
 
-  
-  
   
     return {
       user,

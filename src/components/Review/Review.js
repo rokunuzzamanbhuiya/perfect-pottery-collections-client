@@ -8,7 +8,7 @@ const Review = () => {
   const { register, handleSubmit } = useForm();
   //const { user } = useFirebase();
   const onSubmit = (data) => {
-    fetch("http://localhost:5000/addreview", {
+    fetch("https://dry-ravine-95776.herokuapp.com/addreview", {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify(data),

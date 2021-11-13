@@ -1,16 +1,16 @@
 import React, { useEffect, useState } from "react";
 import Banner from "../Banner/Banner";
 import ServiceCard from "../ServiceCard/ServiceCard";
-import ReviewShow from "../ReviewShow/ReviewShow";
 import Contact from "../Contact/Contact";
 import Offer from "../Offer/Offer";
+import ReviewGet from "../ReviewGet/ReviewGet";
 
 const Home = () => {
   const [services, setServices] = useState([]);
 
   // Loading Data
   useEffect(() => {
-    fetch("http://localhost:5000/services")
+    fetch("https://dry-ravine-95776.herokuapp.com/services")
       .then((res) => res.json())
       .then((data) => {
         setServices(data);
@@ -36,7 +36,7 @@ const Home = () => {
           ))}
         </div>
       </section>
-      <ReviewShow></ReviewShow>
+      <ReviewGet></ReviewGet>
       <Offer></Offer>
       <Contact></Contact>
     </div>

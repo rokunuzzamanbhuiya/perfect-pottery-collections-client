@@ -6,41 +6,41 @@ import "./Login.css";
 const Login = () => {
   const { signInWithGoogle,setUser ,loginWithEmailAndPassword, setIsLoading} = useAuth();
 
-const history= useHistory()
-const location = useLocation()
+  const history= useHistory()
+  const location = useLocation()
 
-const url= location.state?.from || "/home"
+  const url= location.state?.from || "/home"
 
-const [email , setEmail]= useState("")
-const [password , setPassword] = useState("")
+  const [email , setEmail]= useState("")
+  const [password , setPassword] = useState("")
 
 
-const handleGetEmail = (e) =>{
-  setEmail(e.target.value);
-}
+  const handleGetEmail = (e) =>{
+    setEmail(e.target.value);
+  }
 
-const handleGetPassword = (e)=> {
-    setPassword(e.target.value);
-}
+  const handleGetPassword = (e)=> {
+      setPassword(e.target.value);
+  }
 
-const handleLoginWithEmailAndPassword=(e)=>{
-    e.preventDefault();
+  const handleLoginWithEmailAndPassword=(e)=>{
+      e.preventDefault();
 
-    loginWithEmailAndPassword(email,password)
-    .then((res) => {
-      setIsLoading(true)
-        setUser(res.user);
-        history.push(url)
-        // ...
-      })
-      .catch((error) => {
-        const errorCode = error.code;
-        const errorMessage = error.message;
-      })
-      .finally(() => {
-        setIsLoading(false)
-      })
-}
+      loginWithEmailAndPassword(email,password)
+      .then((res) => {
+        setIsLoading(true)
+          setUser(res.user);
+          history.push(url)
+          // ...
+        })
+        .catch((error) => {
+          const errorCode = error.code;
+          const errorMessage = error.message;
+        })
+        .finally(() => {
+          setIsLoading(false)
+        })
+  }
 
   const handleGoogleLogin = () => {
     signInWithGoogle()
