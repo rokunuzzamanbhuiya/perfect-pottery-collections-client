@@ -11,6 +11,7 @@ import useFirebase from "../Hooks/useFirebase";
 import Pay from "../Pay/Pay";
 import DashboardWelcome from "../DasboardWelcome/DasboardWelcome";
 import ManageAllOrders from "../ManageAllOrders/ManageAllOrders";
+import PrivateRoute from "../PrivateRoute/PrivateRoute";
 
 const Dashbaord = () => {
   let { path, url } = useRouteMatch();
@@ -33,70 +34,79 @@ const Dashbaord = () => {
     <div>
       <div className="container">
         <div className="row">
-          <div className="col-md-3 col-sm-3">
+          <div className="col-md-3">
             <div className="dashboard-left">
-              <h4 className="mb-3">DASHBOARD</h4>
+              {isAdmin ? (
+                <h4 className="mb-3">ADMIN DASHBOARD</h4>
+              ) : (
+                <h4 className="mb-3">USER DASHBOARD</h4>
+              )}
               <div className="admin-dashboard">
-                {isAdmin ? (
-                  <>
-                    <Link to={`${url}/manageallorders`}>
-                      <li className="dashboard-menu">Manage All Orders</li>
-                    </Link>
-                    <Link to={`${url}/addnewservice`}>
-                      <li className="dashboard-menu">Add New Service</li>
-                    </Link>
-                    <Link to={`${url}/makeadmin`}>
-                      <li className="dashboard-menu">Make Admin</li>
-                    </Link>
-                    <Link to={`${url}/manageservices`}>
-                      <li className="dashboard-menu">Manage Services</li>
-                    </Link>
-                  </>
-                ) : (
-                  <>
-                    <Link to={`${url}/pay`}>
-                      <li className="dashboard-menu">Pay</li>
-                    </Link>
-
-                    <Link to={`${url}/myorders`}>
-                      <li className="dashboard-menu">My Orders</li>
-                    </Link>
-
-                    <Link to={`${url}/review`}>
-                      <li className="dashboard-menu">Review</li>
-                    </Link>
-                  </>
+                {isAdmin && (
+                  <Link to={`${url}/manageallorders`}>
+                    <li className="dashboard-menu">Manage All Orders</li>
+                  </Link>
+                )}
+                {isAdmin && (
+                  <Link to={`${url}/addnewservice`}>
+                    <li className="dashboard-menu">Add New Service</li>
+                  </Link>
+                )}
+                {isAdmin && (
+                  <Link to={`${url}/makeadmin`}>
+                    <li className="dashboard-menu">Make Admin</li>
+                  </Link>
+                )}
+                {isAdmin && (
+                  <Link to={`${url}/manageservices`}>
+                    <li className="dashboard-menu">Manage Services</li>
+                  </Link>
+                )}
+                {!isAdmin && (
+                  <Link to={`${url}/pay`}>
+                    <li className="dashboard-menu">Pay</li>
+                  </Link>
+                )}
+                {!isAdmin && (
+                  <Link to={`${url}/myorders`}>
+                    <li className="dashboard-menu">My Orders</li>
+                  </Link>
+                )}
+                {!isAdmin && (
+                  <Link to={`${url}/review`}>
+                    <li className="dashboard-menu">Review</li>
+                  </Link>
                 )}
               </div>
             </div>
           </div>
-          <div className="col-md-9 col-sm-3">
+          <div className="col-md-9">
             <div className="dashboard-right">
               <Switch>
-                <Route path={path}>
+                <Route exact path={path}>
                   <DashboardWelcome></DashboardWelcome>
                 </Route>
-                <Route path={`${path}/pay`}>
+                <PrivateRoute exact path={`${path}/pay`}>
                   <Pay></Pay>
-                </Route>
-                <Route path={`${path}/myorders`}>
+                </PrivateRoute>
+                <PrivateRoute exact path={`${path}/myorders`}>
                   <MyOrders></MyOrders>
-                </Route>
-                <Route path={`${path}/review`}>
+                </PrivateRoute>
+                <PrivateRoute exact path={`${path}/review`}>
                   <Review></Review>
-                </Route>
-                <Route path={`${path}/manageallorders`}>
+                </PrivateRoute>
+                <PrivateRoute exact path={`${path}/manageallorders`}>
                   <ManageAllOrders></ManageAllOrders>
-                </Route>
-                <Route path={`${path}/addnewservice`}>
+                </PrivateRoute>
+                <PrivateRoute exact path={`${path}/addnewservice`}>
                   <AddNewService></AddNewService>
-                </Route>
-                <Route path={`${path}/makeadmin`}>
+                </PrivateRoute>
+                <PrivateRoute exact path={`${path}/makeadmin`}>
                   <MakeAdmin></MakeAdmin>
-                </Route>
-                <Route path={`${path}/manageservices`}>
+                </PrivateRoute>
+                <PrivateRoute exact path={`${path}/manageservices`}>
                   <ManageServices></ManageServices>
-                </Route>
+                </PrivateRoute>
               </Switch>
             </div>
           </div>

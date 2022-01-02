@@ -33,55 +33,55 @@ function App() {
           <Route exact path="/">
             <Home></Home>
           </Route>
-          <Route exact path="/home">
+          <Route path="/home">
             <Home></Home>
           </Route>
-          <Route exact path="/services">
+          <Route path="/services">
             <Services />
           </Route>
           <PrivateRoute exact path="/servicedetail/:detailId">
             <ServiceDetail></ServiceDetail>
           </PrivateRoute>
-          <Route exact path="/review">
+          <Route path="/review">
             <ReviewGet></ReviewGet>
           </Route>
-          <Route exact path="/offer">
+          <Route path="/offer">
             <Offer></Offer>
           </Route>
           <Route exact path="/contact">
             <Contact></Contact>
           </Route>
-          <PrivateRoute exact path="/dashboard">
+          <PrivateRoute path="/dashboard">
             <Dashboard></Dashboard>
           </PrivateRoute>
-          <PrivateRoute exact path="/dashboard/pay">
+          <PrivateRoute path="/dashboard/pay">
             <Pay></Pay>
           </PrivateRoute>
-          <PrivateRoute exact path="/dashboard/myorders">
+          <PrivateRoute path="/dashboard/myorders">
             <MyOrders></MyOrders>
           </PrivateRoute>
-          <PrivateRoute exact path="/dashboard/review">
+          <PrivateRoute path="/dashboard/review">
             <Review></Review>
           </PrivateRoute>
-          <PrivateRoute exact path="/dashboard/manageallorders">
+          <PrivateRoute path="/dashboard/manageallorders">
             <ManageAllOrders></ManageAllOrders>
           </PrivateRoute>
-          <PrivateRoute exact path="/dashboard/addnewservice">
+          <PrivateRoute path="/dashboard/addnewservice">
             <AddNewService></AddNewService>
           </PrivateRoute>
-          <PrivateRoute exact path="/dashboard/makeadmin">
+          <PrivateRoute path="/dashboard/makeadmin">
             <MakeAdmin></MakeAdmin>
           </PrivateRoute>
-          <PrivateRoute exact path="/dashboard/manageservices">
+          <PrivateRoute path="/dashboard/manageservices">
             <ManageServices></ManageServices>
           </PrivateRoute>
-          <PrivateRoute exact path="/confirm">
+          <PrivateRoute path="/confirm">
             <Confirm></Confirm>
           </PrivateRoute>
-          <Route exact path="/login">
+          <Route path="/login">
             <Login></Login>
           </Route>
-          <Route exact path="/register">
+          <Route path="/register">
             <Register></Register>
           </Route>
           <Route path="*">

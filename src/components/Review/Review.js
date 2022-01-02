@@ -26,21 +26,21 @@ const Review = () => {
             <h2>Review</h2>
             <form onSubmit={handleSubmit(onSubmit)}>
               <input
-                className="input-field form-rev mb-4 mt-4 w-50"
+                className="input-field form-rev mb-4 mt-4 w-75"
                 name="name"
                 placeholder="Name"
                 {...register("name", { required: true })}
               />
               <br />
               <input
-                className="input-field form-rev mb-4 w-50"
+                className="input-field form-rev mb-4 w-75"
                 name="comments"
                 placeholder="Comments"
                 {...register("comments", { required: true })}
               />
               <br />
               <input
-                className="input-field form-rev mb-4 w-50"
+                className="input-field form-rev mb-4 w-75"
                 name="rating"
                 placeholder="Rating(1 to 5)"
                 {...register("rating", { required: true })}
@@ -53,12 +53,6 @@ const Review = () => {
                 value="Submit Your Review"
               />
             </form>
-            <NavLink
-              className="text-center notfound shadow mt-5"
-              to="/dashboard"
-            >
-              Go To Dashboard
-            </NavLink>
           </div>
         </div>
       </div>

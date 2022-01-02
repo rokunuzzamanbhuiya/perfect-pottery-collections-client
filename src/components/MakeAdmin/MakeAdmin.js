@@ -1,7 +1,7 @@
 import React from "react";
 import "./MakeAdmin.css";
 import { useForm } from "react-hook-form";
-import { Link } from "react-router-dom";
+
 const MakeAdmin = () => {
   const { register, handleSubmit } = useForm();
 
@@ -20,7 +20,7 @@ const MakeAdmin = () => {
       <h2 className="mb-4">Make Admin</h2>
       <form onSubmit={handleSubmit(onSubmit)}>
         <input
-          className="input-field form-admim w-25"
+          className="input-field form-admim w-75"
           name="email"
           placeholder="Email"
           type="email"
@@ -34,9 +34,6 @@ const MakeAdmin = () => {
           value="Make As Admin"
         />
       </form>
-      <Link className="text-center notfound shadow mb-5" to="/dashboard">
-        Go To Dashboard
-      </Link>
     </div>
   );
 };

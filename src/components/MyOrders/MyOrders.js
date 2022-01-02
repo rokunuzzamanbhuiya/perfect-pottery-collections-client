@@ -73,9 +73,6 @@ const MyOrders = () => {
                   </tr>
                 </tbody>
               </table>
-              <NavLink className="text-center notfound shadow mt-5" to="/dashboard">
-                Go To Dashboard
-              </NavLink>
 
               {/* <!-- Modal --> */}
               <div className="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">

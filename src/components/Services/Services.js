@@ -15,7 +15,7 @@ const Services = () => {
   return (
     <section id="service-id" className="mt-5 container">
       <h1 className="text-center fw-bolder" style={{ color: "#865932" }}>
-        MOST POPULAR COLLECTIONS
+        Most Popular Collections
       </h1>
       <p className="text-center mb-5">
         To contribute to positive change and achieve our <br /> sustainability

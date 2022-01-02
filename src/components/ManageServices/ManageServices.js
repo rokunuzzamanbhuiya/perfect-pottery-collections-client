@@ -96,14 +96,6 @@ const ManageServices = () => {
                   </tr>
                 </tbody>
               </table>
-              <div className="text-center">
-                <Link
-                  className="text-center notfound shadow mt-5"
-                  to="/dashboard"
-                >
-                  Go To Dashboard
-                </Link>
-              </div>
 
               {/* <!-- Modal --> */}
               <div

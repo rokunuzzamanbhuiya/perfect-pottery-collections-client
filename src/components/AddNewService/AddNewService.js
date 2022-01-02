@@ -51,11 +51,6 @@ const AddNewService = () => {
 
                         </form>
 
-                        <div className="text-center">
-                          <Link className="text-center notfound shadow mb-5" to="/dashboard">
-                            Go To Dashboard
-                        </Link>
-                         </div>
                     </div>
                 </div>
             </div>
